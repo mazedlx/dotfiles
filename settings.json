@@ -1,0 +1,192 @@
+{
+    /**
+    * Better Defaults
+    **/
+    "editor.copyWithSyntaxHighlighting": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.emptySelectionClipboard": false,
+    "workbench.editor.enablePreview": false,
+    "window.newWindowDimensions": "inherit",
+    "editor.multiCursorModifier": "ctrlCmd",
+    "files.trimTrailingWhitespace": true,
+    "diffEditor.renderSideBySide": false,
+    "editor.snippetSuggestions": "top",
+    "editor.detectIndentation": false,
+    "window.nativeFullScreen": false,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "workbench.sideBar.location": "right",
+    "workbench.statusBar.visible": false,
+    "editor.renderIndentGuides": false,
+    "editor.minimap.enabled": false,
+    "editor.lineNumbers": "off",
+    "scm.diffDecorations": "none",
+    "editor.hover.enabled": true,
+    "editor.matchBrackets": "never",
+    "workbench.tips.enabled": false,
+    "editor.colorDecorators": false,
+    "git.decorations.enabled": false,
+    "workbench.startupEditor": "none",
+    "editor.lightbulb.enabled": false,
+    "editor.selectionHighlight": false,
+    "editor.overviewRulerBorder": false,
+    "editor.renderLineHighlight": "none",
+    "editor.occurrencesHighlight": false,
+    "problems.decorations.enabled": false,
+    "editor.hideCursorInOverviewRuler": true,
+    "editor.gotoLocation.multipleReferences": "goto",
+    "editor.gotoLocation.multipleDefinitions": "goto",
+    "editor.gotoLocation.multipleDeclarations": "goto",
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "editor.gotoLocation.multipleImplementations": "goto",
+    "editor.gotoLocation.multipleTypeDefinitions": "goto",
+    "workbench.iconTheme": "vscode-icons",
+    "editor.cursorSmoothCaretAnimation": true,
+    "editor.fontFamily": "MonoLisa",
+    "editor.fontSize": 15,
+    "editor.fontWeight": "400",
+    "editor.lineHeight": 45,
+    "editor.suggestFontSize": 15,
+    "editor.suggestLineHeight": 28,
+    "terminal.integrated.fontSize": 15,
+    "terminal.integrated.lineHeight": 1,
+    "workbench.fontAliasing": "auto",
+    /**
+    * Find
+    **/
+    "search.useIgnoreFiles": false,
+    "search.exclude": {
+        // Hide everything in /vendor, except the "laravel" and "livewire" folder.
+        "**/vendor/{[^l],?[^ai]}*": true,
+        // Hide everything in /public, except "index.php"
+        "**/public/{[^i],?[^n]}*": true,
+        "**/node_modules": true,
+        "**/dist": true,
+        "**/_ide_helper.php": true,
+        "**/composer.lock": true,
+        "**/package-lock.json": true,
+        "storage": true,
+        ".phpunit.result.cache": true
+    },
+    /**
+    * Code
+    **/
+    // Include "-" in word selection.
+    "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": false,
+    "emmet.includeLanguages": {
+        "blade": "html",
+        "vue-html": "html",
+        "vue": "html"
+    },
+    "emmet.triggerExpansionOnTab": true,
+    "files.associations": {
+        ".php_cs": "php",
+        ".php_cs.dist": "php",
+        ".blade.php": "blade"
+    },
+    "[blade]": {
+        "editor.defaultFormatter": "shufo.vscode-blade-formatter",
+    },
+    "togglequotes.chars": [
+        "\"",
+        "'",
+        "`"
+    ],
+    "importCost.typescriptExtensions": [
+        "\\.jsx?$",
+        "\\.tsx?$",
+        "\\.vue$"
+    ],
+    "eslint.validate": [
+        "vue",
+        "html",
+        "javascript"
+    ],
+    "eslint.format.enable": true,
+    "eslint.debug": true,
+    "eslint.lintTask.enable": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "projectManager.git.baseFolders": [
+        "/Users/maze/Code"
+    ],
+    /**
+    * PHP
+    **/
+    "php.suggest.basic": false,
+    "intelephense.completion.fullyQualifyGlobalConstantsAndFunctions": true,
+    "intelephense.environment.phpVersion": "7.4.0",
+    /**
+    * PHP CS Fixer
+    **/
+    "[php]": {
+        "editor.defaultFormatter": "junstyle.php-cs-fixer",
+        "editor.rulers": [
+            {
+                "column": 80, // spacing of 1st column from left
+                "color": "#555" // orange, Go Vols!
+            },
+        ],
+    },
+    "php-cs-fixer.showOutput": false,
+    "php-cs-fixer.autoFixByBracket": false,
+    "php-cs-fixer.rules": "@PSR2",
+    "terminal.integrated.fontWeightBold": "normal",
+    "workbench.colorCustomizations": {
+        "terminal.background": "#000000"
+    },
+    /**
+    * Window Settings
+    **/
+    // "window.nativeTabs": true,
+    "window.titleBarStyle": "native",
+    "customizeUI.titleBar": "inline",
+    "customizeUI.stylesheet": {
+        ".editor .title": "background: transparent !important;",
+        //".editor .title .label-container": "visibility: hidden;",
+        // Hide top-right buttons
+        // Hide top-right buttons
+        ".editor .title .actions-container .action-item a": "visibility: hidden;",
+        // Show top-right "settings goto icon"
+        ".editor .title .actions-container .action-item a[title=\"Open Settings (UI)\"]": "visibility: initial;",
+        ".editor .title .actions-container .action-item a[title=\"Open Settings (JSON)\"]": "visibility: initial;",
+        // Make it the "right-most" icon.
+        ".editor .title .actions-container": "flex-direction: row-reverse;",
+        // Only show the scrollbar on hover.
+        ".editor .scrollbar .slider": "visibility: hidden",
+        ".editor .scrollbar:hover .slider": "visibility: initial",
+        // Change cursor color.
+        ".monaco-editor .cursor": "background: linear-gradient(to bottom, #7f00ff, #e100ff) !important; color: #292D3E !important"
+    },
+    "editor.wordWrap": "on",
+    "keyboard.touchbar.enabled": false,
+    "explorer.confirmDelete": false,
+    "terminal.external.osxExec": "Hyper.app",
+    "terminal.integrated.automationShell.osx": "",
+    "workbench.editor.showTabs": false,
+    "breadcrumbs.enabled": false,
+    "workbench.activityBar.visible": false,
+    "terminal.integrated.fontWeight": "100",
+    "terminal.explorerKind": "external",
+    "php-cs-fixer.executablePath": "/Users/maze/.composer/vendor/bin/php-cs-fixer",
+    "security.workspace.trust.untrustedFiles": "open",
+    "php-cs-fixer.onsave": true,
+    "eslint.lintTask.options": "",
+    "eslint.alwaysShowStatus": true,
+    "editor.accessibilitySupport": "off",
+    "terminal.integrated.env.osx": {
+        "FIG_NEW_SESSION": "1"
+    },
+    "editor.renderWhitespace": "none",
+    "editor.renderControlCharacters": false,
+    "terminal.integrated.enablePersistentSessions": false,
+    "workbench.colorTheme": "Natty",
+    "namespaceResolver.sortAlphabetically": true,
+    "debug.internalConsoleOptions": "neverOpen",
+    "window.zoomLevel": 1,
+    "bladeFormatter.format.wrapAttributes": "force-expand-multiline",
+    "css.completion.triggerPropertyValueCompletion": false,
+}
