@@ -1,0 +1,5 @@
+alias pa="php artisan"
+alias pu="phpunit"
+alias puf="phpunit --filter"
+alias nah="git reset --hard;git clean -df"
+alias wip="git add .;gcmsg 'WIP.'" 
